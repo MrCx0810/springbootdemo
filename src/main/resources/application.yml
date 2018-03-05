@@ -1,0 +1,29 @@
+server:
+  tomcat:
+     uri-encoding: UTF-8
+spring:
+#多环境配置文件激活属性
+  profiles:
+    active: dev
+#mysql数据源
+  datasource:
+      url: jdbc:mysql://localhost:3306/springbootdemo?useUnicode=true&amp&characterEncoding=utf-8
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+#jsp配置
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+#文件上传配置
+  http:
+    multipart:
+      max-file-size: 10Mb
+      max-request-size: 10Mb
+
+
+
+
+
+
